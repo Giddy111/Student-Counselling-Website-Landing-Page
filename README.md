@@ -2,8 +2,7 @@
 ![Screenshot (32)](https://user-images.githubusercontent.com/33707645/211304868-848f2cb4-7c0a-4945-a566-5ea8bcd82590.png)
 
 
-# Student-Counselling-Website-Landing-Page
-!! READ ME BEFORE DOING ANYTHING !! 
+# Student Counselling Website Landing Page
 
 - Edited by Chukwuoma Gideon Chimemerie 
 - A simple Student Counselling Website Landing Page
