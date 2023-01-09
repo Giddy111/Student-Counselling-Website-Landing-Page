@@ -6,7 +6,7 @@
 !! READ ME BEFORE DOING ANYTHING !! 
 
 - Edited by Chukwuoma Gideon Chimemerie 
-- A simple Student Counselling Website Landing Page that can be edited and implemented in schools for online counselling of students by counsellors from anywhere in the world
+- A simple Student Counselling Website Landing Page
 
 
 # LIST OF APPLICATIONS AND CODEBASES USED:
