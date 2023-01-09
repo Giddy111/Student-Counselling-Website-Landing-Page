@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="icon" href="logo.png" />
+  <title>How it works</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="home.css" />
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span
+          ><a href="home.html"
+            ><img
+              alt=""
+              src="images/logo.png"
+              style="height: 65px; width: 200px" /></a
+        ></span>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="#"></a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+          <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li>
+              <a href="howitworks.html" style="font-weight: bold"
+                >How it Works</a
+              >
+            </li>
+            <li><a href="counsellors.html">Our Counsellors</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </div>
+        <a href="../ChatApp/index.php">
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            style="
+              background-color: #056c5f;
+              color: white;
+              height: 35px;
+              width: 90px;
+              font-size: 14px;
+            "
+          >
+            <span class="glyphicon glyphicon-log-in"></span> &nbsp&nbspLog In
+          </button></a
+        >
+      </div>
+    </nav>
+    <div
+      class="jumbotron jumbotron-fluid text-center"
+      style="margin-top: 50px; background: #f8a683"
+    >
+      <div class="container">
+        <h2 class="display-4">How It Works</h2>
+        <br />
+        <p class="lead">
+          The most simple & convenient way to access talk therapy - anytime,
+          anywhere, any device.
+        </p>
+      </div>
+    </div>
+    <script>
+      const body = document.querySelector("body"),
+        nav = document.querySelector("nav"),
+        sidebarOpen = document.querySelector(".sidebarOpen"),
+        siderbarClose = document.querySelector(".siderbarClose");
+
+      //   js code to toggle sidebar
+      sidebarOpen.addEventListener("click", () => {
+        nav.classList.add("active");
+      });
+
+      body.addEventListener("click", (e) => {
+        let clickedElm = e.target;
+
+        if (
+          !clickedElm.classList.contains("sidebarOpen") &&
+          !clickedElm.classList.contains("menu")
+        ) {
+          nav.classList.remove("active");
+        }
+      });
+    </script>
+    <div class="container" style="font-size: 15px">
+      <div class="col-md-4">
+        <div
+          class="card text-center"
+          style="width: 300px; align-items: center; padding: 10px"
+        >
+          <img
+            class="card-img-top"
+            src="images/choose-counseling-therapy-plan.svg"
+            alt="Card image cap"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Know Your Needs</h2>
+            <p class="card-text">
+              Answer a few quick questions and get a therapist recommendation
+              right away.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="card text-center"
+          style="width: 300px; align-items: center; padding: 10px"
+        >
+          <img
+            class="card-img-top"
+            src="images/get-matched-with-counseling-psychologist.svg"
+            alt="Card image cap"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Schedule A Session</h2>
+            <p class="card-text">
+              Choose a convenient time slot and get an appointment with your
+              therapist.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="card text-center"
+          style="width: 300px; align-items: center; padding: 10px"
+        >
+          <img
+            class="card-img-top"
+            src="images/connect-on-video-sessions-with-therapist.svg"
+            alt="Card image cap"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Regular Messages</h2>
+            <p class="card-text">
+              In addition to the scheduled video sessions, you can reach out to
+              your therapist via voice messages or chat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="font-size: 15px">
+      <div class="col-md-4">
+        <div
+          class="card text-center"
+          style="width: 300px; align-items: center; padding: 10px"
+        >
+          <img
+            class="card-img-top"
+            src="images/felicity-24x7-support-helpdesk.svg"
+            alt="Card image cap"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Choose The Right Plan</h2>
+            <p class="card-text">
+              Decide on the number of sessions you would like to opt for.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div
+          class="card text-center"
+          style="width: 300px; align-items: center; padding: 10px"
+        >
+          <img
+            class="card-img-top"
+            src="images/know-your-counseling-needs.svg"
+            alt="Card image cap"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Get Matched</h2>
+            <p class="card-text">
+              Choose the recommended therapist or talk to a matching expert who
+              will connect you with the right therapist based on your needs.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="col-md-4">
+        <div
+          class="card text-center"
+          style="width: 300px; align-items: center; padding: 10px"
+        >
+          <img
+            class="card-img-top"
+            src="images/schedule-video-session-with-counselor.svg"
+            alt="Card image cap"
+            style="width: 100px; height: 100px"
+          />
+          <div class="card-body">
+            <h2 class="card-title">Get Therapy</h2>
+            <p class="card-text">
+              At the scheduled time, join the session with your therapist using
+              the mobile application or web browser.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <footer>
+      <div>
+        <div class="footer-content">
+          <h1>Tenderpath</h1>
+          <h4>Open Mind Open Doors</h4>
+          <p>
+            Tenderpath is the best online counseling and therapy consultation
+            Website for students in Nigeria. Consult the Best Online
+            Psychologist, Online Psychiatrist, Mental health therapist,
+            Counsellor and Psychotherapist now via chat, phone or video call.
+            Reclaim Your Inner Harmony. Talk to the Best Online Psychologist in
+            Nigeria now.
+          </p>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin-square"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p>copyright &copy; <a href="#">Tenderpath</a></p>
+          <div class="footer-menu">
+            <ul class="f-menu">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="howitworks.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

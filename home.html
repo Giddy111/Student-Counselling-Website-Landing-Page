@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link rel="icon" href="logo.png">
+	<title>
+		Tenderpath
+	</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="home.css">
+        
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen' ></i>
+            <span><a href="#"><img alt="Tenderpath Logo" src="images/logo.png" style="height: 65px;width: 200px;"></a></span>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="#"></a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="home.html" style="font-weight: bold;">Home</a></li>
+					<li><a href="howitworks.html">How it Works</a></li>
+                    <li><a href="counsellors.html">Our Counsellors</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+			<a href="../ChatApp/index.php">
+				<button type="button" class="btn btn-outline-success" style="background-color: #056c5f;color:white;height: 35px;width: 90px;font-size: 14px;">
+                    <span class="glyphicon glyphicon-log-in"></span> &nbsp&nbspLog in
+                </button></a>
+        </div>
+    </nav>
+<script>
+const body = document.querySelector("body"),
+nav = document.querySelector("nav"),
+sidebarOpen = document.querySelector(".sidebarOpen"),
+siderbarClose = document.querySelector(".siderbarClose");
+
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
+});
+
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
+    }
+});
+</script>
+
+<!--carousel-->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active bg-1">      
+        <div class="carousel-caption">
+          	<h5>Reclaim your 
+			  <span class="text" style="color: #f8a683;">inner Harmony</span>
+			</h5>
+         <p>Top student Counselling Services in Nigeria.</p>
+        </div>
+      </div>
+      <div class="carousel-item bg-2">      
+        <div class="carousel-caption">
+          	<h5>Connect with  the most trusted
+			  <span class="text" style="color: #f8a683;"> Counsellors</span>
+			</h5>
+          <p>We understand, We care, We heal.</p>
+        </div>
+      </div>
+      <div class="carousel-item bg-3">      
+        <div class="carousel-caption">
+         	<h5>Express your 
+			  <span class="text" style="color: #f8a683;">Emotion</span>
+			</h5>
+          <p>Grow to your fullest Possibility.</p>
+        </div>
+      </div>
+    </div>
+</div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- START SECTION SERVICES -->
+	<section class="section-services">
+		<div class="container">
+			<div class="row justify-content-center text-center">
+				<div class="col-md-10 col-lg-8">
+					<div class="header-section">
+						<h2 class="title" style="color:#056c5f">Services We Offer</h2>
+						<p class="description">Online therapy, also known as e-therapy, e-counseling, teletherapy, or cyber-counseling, involves providing mental health services and support over the internet. Services can be offered through email, text messaging, video conferencing, online chat, messaging, or internet phone.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- Single Service -->
+				<div class="col-md-6 col-lg-4">
+					<div class="single-service">
+						<div class="content">
+							<span class="icon">
+								<i class='fas fa-chart-pie'></i>
+							</span>
+							<h3 class="title">Performance Analysis</h3>
+							<p class="description">To identify the effects of various factors such as parental level of education, test preparation course etc affect the performance of the students.</p>
+							<a href="#" class="learn-more">Learn More</a>
+						</div>
+						<span class="circle-before"></span>
+					</div>
+				</div>
+				<!-- / End Single Service -->
+				<!-- Single Service -->
+				<div class="col-md-6 col-lg-4">
+					<div class="single-service">
+						<div class="content">
+							<span class="icon">
+								<i class="fas fa-stream"></i>
+							</span>
+							<h3 class="title">Frequent Seminar</h3>
+							<p class="description">A seminar is a form of academic instruction, either at an academic institution or offered by a commercial or professional organization. </p>
+							<a href="#" class="learn-more">Learn More</a>
+						</div>
+						<span class="circle-before"></span>
+					</div>
+				</div>
+				<!-- / End Single Service -->
+				<!-- Single Service -->
+				<div class="col-md-6 col-lg-4">
+					<div class="single-service">
+						<div class="content">
+							<span class="icon">
+								<i class="fas fa-chalkboard-teacher"></i>
+							</span>
+							<h3 class="title">Personal Meeting</h3>
+							<p class="description">Personal meeting means a face-to-face meeting between a franchisor or franchise broker and a prospective franchisee.</p>
+							<a href="#" class="learn-more">Learn More</a>
+						</div>
+						<span class="circle-before"></span>
+					</div>
+				</div>
+				<!-- / End Single Service -->
+			</div>
+		</div>
+	</section>
+	<!-- testimonial-->
+	<section class="home-testimonial">
+		<div class="container-fluid">
+			<div class="row d-flex justify-content-center testimonial-pos">
+				<div class="col-md-12 pt-4 d-flex justify-content-center">
+					<h3>Testimonials</h3>
+				</div>
+				<div class="col-md-12 d-flex justify-content-center">
+					<h2>Explore the students experience</h2>
+				</div>
+			</div>
+			<section class="home-testimonial-bottom">
+				<div class="container testimonial-inner">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-4 style-3">
+							<div class="tour-item ">
+								<div class="tour-desc bg-white">
+									<div class="tour-text color-grey-3 text-center">&ldquo;Hi! I’ve been wondering for quite some time why i feel my focus is so different. I mean i often feel like i get consumed by things I’m working on, earlier i used to think I’m very committed but it isn’t always a help!.&rdquo;</div>
+									<div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="Fotor_AI.png" alt=""></div>
+									<div class="link-name d-flex justify-content-center">Mike Richards</div>
+									<div class="link-position d-flex justify-content-center">Student</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 style-3">
+							<div class="tour-item ">
+								<div class="tour-desc bg-white">
+									<div class="tour-text color-grey-3 text-center">&ldquo;Hi! I’ve been wondering for quite some time why i feel my focus is so different. I mean i often feel like i get consumed by things I’m working on, earlier i used to think I’m very committed but it isn’t always a help!&rdquo;</div>
+									<div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="Fotor_AI 2.png" alt=""></div>
+									<div class="link-name d-flex justify-content-center">Stephanie Dell</div>
+									<div class="link-position d-flex justify-content-center">Student</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 style-3">
+							<div class="tour-item ">
+								<div class="tour-desc bg-white">
+									<div class="tour-text color-grey-3 text-center">&ldquo;Hi! I’ve been wondering for quite some time why i feel my focus is so different. I mean i often feel like i get consumed by things I’m working on, earlier i used to think I’m very committed but it isn’t always a help!&rdquo;</div>
+									<div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="Fotor_AI.png" alt=""></div>
+									<div class="link-name d-flex justify-content-center">Andrew Divine</div>
+									<div class="link-position d-flex justify-content-center">Student</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+	</section>
+<div class="divprogress">
+	
+	<h1>Taking Online Counselling to Every Student</h1>
+	<h4>
+		Listen from Clients Directly about our Top Counsellors, Mental Health Experts in Nigeria. <br>We believe in quality and the best mental health services.
+	</h4><br><br>
+	Happy with Online Therapy Services<div id="myProgress"><div id="myBar1">99%</div></div><br>
+	I am making progress because of Counselling<div id="myProgress"><div id="myBar1">99%</div></div><br>
+	Recommendation for my Friends and Family<div id="myProgress"><div id="myBar3">100%</div></div><br>
+	Satisfied with my Assigned Counsellors<div id="myProgress"><div id="myBar3">98%</div></div><br>
+	5 Star Rating<div id="myProgress"><div id="myBar1">99%</div></div>
+</div>
+<!--footer-->
+<footer>
+	<div>
+		<div class="footer-content">
+			<h1>Tenderpath</h1>
+			<h4>Open Mind Open Doors</h4>
+			<p>Tenderpath is the best online counseling and therapy consultation Website for students in Nigeria. Consult the Best Online Psychologist, Online Psychiatrist, Mental health therapist, Counsellor and Psychotherapist now via chat, phone or video call. Reclaim Your Inner Harmony. Talk to the Best Online Psychologist in Nigeria now.</p>
+			<ul class="socials">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>copyright &copy; <a href="#">Tenderpath</a>  </p>
+			<div class="footer-menu">
+				<ul class="f-menu">
+				<li><a href="home.html">Home</a></li>
+				<li><a href="howitworks.html">Services</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</footer>
+</body>
+</html>
